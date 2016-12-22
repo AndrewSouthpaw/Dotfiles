@@ -25,10 +25,6 @@ else
 	fi;
 fi;
 
-read -p "Do you have Sublime Text 3 installed? (y/n) " -n 1;
-echo "";
-if [[ $REPLY =~ ^[Yy]$ ]]; then
-  ./sublime.sh
-fi;
+./sublime.sh
 
 unset doIt;

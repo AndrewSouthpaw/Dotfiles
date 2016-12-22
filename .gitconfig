@@ -10,6 +10,7 @@
   s = status -s
 
   # Shortening basic commands
+  co = checkout
   ci = commit
   st = status
   b = branch
@@ -23,6 +24,9 @@
   pl = pull
   plo = pull origin
   plm = !"git checkout master && git pull origin master"
+
+  # Clear unstaged changes
+  cl = checkout -- .
 
   # Show the diff between the latest commit and the current state
   d = !"git diff-index --quiet HEAD -- || clear; git diff --patch-with-stat"
@@ -40,7 +44,7 @@
   food = branch -d foo
 
   # Clone a repository including all submodules
-  cl = clone --recursive
+  cloner = clone --recursive
 
   # Commit all changes
   ca = !git add -A && git commit -av
