@@ -1,0 +1,35 @@
+<snippet>
+  <content><![CDATA[;(function() {
+
+  angular
+    .module('${1:module}')
+    .directive('${2:directive}', ${2:directive});
+
+  /* @ngInject */
+  function ${2:directive}(${3:dependencies}) {
+
+    const directive = {
+      bindToController: true,
+      controller: ${4:Controller},
+      controllerAs: '${5:vm}',
+      link: link,
+      restrict: 'E',
+      scope: {},
+      templateUrl: '/* @echo BASE_STATIC_DIR */html/${6:path/to}/${7:url}.directive.html'
+    };
+
+    return directive;
+
+    function link(scope, element, attrs, vm) {}
+  }
+
+  /* @ngInject */
+  function ${4:Controller}() {
+    const vm = this;
+  }
+  
+}).call(this);
+]]></content>
+  <tabTrigger>ngdirective</tabTrigger>
+  <scope>text.plain, source.js</scope>
+</snippet>

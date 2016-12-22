@@ -1,0 +1,29 @@
+[
+  {
+    "keys": ["super+;"], "command": "run_macro_file", "args": {"file": "Packages/User/EndOfLineSemicolon.sublime-macro"}
+  },
+  {
+    "keys": ["super+shift+,"], "command": "run_macro_file", "args": {"file": "Packages/User/EndOfLineComma.sublime-macro"}
+  },
+  {
+    "keys": ["super+backspace"], "command": "run_macro_file", "args": {"file": "Packages/User/DeleteLineFinishWithTab.sublime-macro"}
+  },
+  {
+    "keys": ["ctrl+super+equals"], "command": "run_macro_file", "args": {"file": "Packages/User/CommentDiv.sublime-macro"}
+  },
+  {
+    "keys": ["ctrl+backspace"], "command": "run_macro_file", "args": {"file": "Packages/User/ClearLine.sublime-macro"}
+  },
+  { "keys": ["alt+m"], "command": "markdown_preview", "args": {"target": "browser", "parser":"markdown"}},
+  { "keys": ["alt+ctrl+m"], "command": "markdown_preview_select", "args": {"target": "browser"} },
+  { "keys": ["ctrl+s"], "command": "quickfind" },
+  { "keys": ["ctrl+shift+s"], "command": "quickfind", "args": { "extend": true } },
+  { "keys": ["alt+s"], "command": "quickfind", "args": { "look_backwards": true } },
+  { "keys": ["alt+shift+s"], "command": "quickfind", "args": { "look_backwards": true, "extend": true } },
+  { "keys": ["ctrl+alt+s"], "command": "quickfind", "args": { "use_regex": true } },
+  { "keys": ["ctrl+alt+super+space"], "command": "run_macro_file", "args": {"file": "Packages/User/doubleSpaceAndCenter.sublime-macro"}},
+  { "keys": ["ctrl+shift+c"], "command": "sublime_highlight", "args": { "target": "clipboard", "output_type": "rtf" }},
+  // Disable recently used tab behavior
+  { "keys": ["ctrl+tab"], "command": "next_view" },
+  { "keys": ["ctrl+shift+tab"], "command": "prev_view" },
+]

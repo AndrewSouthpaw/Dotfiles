@@ -1,0 +1,19 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"Babel",
+		"DocBlockr",
+		"GitGutter",
+		"JavaScript & NodeJS Snippets",
+		"Markdown Preview",
+		"Package Control",
+		"Solarized Color Scheme",
+		"Theme - Soda",
+		"Theme - Soda SolarizedDark",
+		"Trimmer"
+	]
+}
