@@ -156,45 +156,12 @@ alias reload="exec $SHELL -l"
 # Print each PATH entry on a separate line
 alias path='echo -e ${PATH//:/\\n}'
 
-# Sublime shortcut
-alias s="subl"
-
 # Find name from current directory
 alias findn='find . -name '
-
-# Chrome opener
-chrome() {
-	open -a "Google Chrome" "$1"
-}
-
-# Display IP
-ip() {
-	echo 'External:' $(curl --silent ip.appspot.com)
-	echo 'Internal:' $(ifconfig | grep 'inet' | grep 'broadcast' | awk '{print $2}')
-}
-
-# Rotate path/to/image degreesClockwise
-rotate() { sips -r $2 $1; }
 
 # Show the CPU temperature.
 # prereq: $ gem install iStats
 alias temp='istats cpu temperature'
-
-# Rename the current Terminal tab.
-title() { printf "\e]1;$1\a"; }
-
-# Serve the working directory at 0.0.0.0:8000.
-alias serve='python -m SimpleHTTPServer'
-
-# Show/Hide hidden files in Finder
-hiddenFiles() {
-  if [ $(defaults read com.apple.finder AppleShowAllFiles) = FALSE ] ; then
-    echo 'Showing hidden files.' && defaults write com.apple.finder AppleShowAllFiles TRUE
-  else
-    echo 'Hiding hidden files.' && defaults write com.apple.finder AppleShowAllFiles FALSE
-  fi
-    killall Finder # Cycle
-}
 
 # List processes listening to ports
 alias lsp='sudo lsof -i -n -P | grep LISTEN'
