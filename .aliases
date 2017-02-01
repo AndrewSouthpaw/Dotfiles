@@ -165,3 +165,6 @@ alias temp='istats cpu temperature'
 
 # List processes listening to ports
 alias lsp='sudo lsof -i -n -P | grep LISTEN'
+
+# Rails, because typing those four extra letters is too much
+alias r='rails'

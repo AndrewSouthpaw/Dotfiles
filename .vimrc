@@ -105,3 +105,7 @@ if has("autocmd")
 	" Treat .md files as Markdown
 	autocmd BufNewFile,BufRead *.md setlocal filetype=markdown
 endif
+
+" Enforce margin for git commits
+au FileType gitcommit set tw=72
+
