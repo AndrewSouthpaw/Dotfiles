@@ -256,6 +256,11 @@ function hiddenFiles() {
   killall Finder # Cycle
 }
 
+# List processes listening to a specific port
+function findPorts() {
+  lsof -i :$1
+}
+
 # TC stuff
 function rs() {
   rails server
@@ -267,5 +272,5 @@ function wp() {
   bin/webpack_dev_server
 }
 function wpip() {
-  ./node_modules/.bin/webpack-dev-server --config config/webpack.config.js --host `localip`
+  ./node_modules/.bin/webpack-dev-server --config webpack.config.js --host `localip`
 }
