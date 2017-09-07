@@ -11,6 +11,11 @@ function doIt() {
 		--exclude "bootstrap.sh" \
 		--exclude "README.md" \
 		--exclude "LICENSE-MIT.txt" \
+		--exclude "RubyMine" \
+		--exclude "Sublime" \
+    --exclude "init" \
+    --exclude "brew.sh" \
+    --exclude "sublime.sh" \
 		-avh --no-perms . ~;
 	source ~/.bash_profile;
 }
