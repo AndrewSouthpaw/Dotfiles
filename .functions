@@ -260,17 +260,3 @@ function hiddenFiles() {
 function findPorts() {
   lsof -i :$1
 }
-
-# TC stuff
-function rs() {
-  rails server
-}
-function rsip() {
-  rails server -b `localip` -p 3000
-}
-function wp() {
-  bin/webpack_dev_server
-}
-function wpip() {
-  ./node_modules/.bin/webpack-dev-server --config webpack.config.js --host `localip`
-}

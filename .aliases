@@ -30,7 +30,7 @@ fi
 alias l="ls -lF ${colorflag}"
 
 # List all files colorized in long format, including dot files
-alias la="ls -laF ${colorflag}"
+alias la="ls -laFh ${colorflag}"
 
 # List only directories
 alias lsd="ls -lF ${colorflag} | grep --color=never '^d'"
@@ -168,3 +168,6 @@ alias lsp='sudo lsof -i -n -P | grep LISTEN'
 
 # Rails, because typing those four extra letters is too much
 alias r='rails'
+
+# Flow shortcut
+alias flow='./node_modules/flow-bin/vendor/flow'

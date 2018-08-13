@@ -1,2 +1,2 @@
-PATH=/usr/local/share/python:~/Library/Python/2.7/bin:$PATH
+PATH=/usr/local/share/python:~/Library/Python/2.7/bin:/usr/local/sbin:$PATH
 export PATH
